@@ -22,7 +22,7 @@
         <div class="header-employee">
             <h2>Employee</h2>
             <div class="add">
-                <button>+ Add</button>
+                <button onclick="openModel()">+ Add</button>
             </div>
         </div>
         <div class="table">
@@ -68,7 +68,22 @@
                 </tbody>
             </table>
         </div>
-        
     </div>
+    <div class="new-employee">
+        <div >
+            <div class="modal-header">
+                <h1>New Employee</h1>
+            </div>
+        </div>
+       
+    </div>
+    <script>
+        function openModal(){
+            document.getElementsByClassName("new-employee").style.display = "flex";
+        }
+        function closeModal(){
+            document.getElementsByClassName("new-employee").style.display = "flex";
+        }
+    </script>
 </body>
 </html>
